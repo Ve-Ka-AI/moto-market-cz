@@ -536,11 +536,7 @@ with tab_overview:
             fig_disp = px.pie(df_disp_group, names='Class', values='Units', hole=0.4, title='Displacement Class Distribution', color='Class', color_discrete_map=class_colors, category_orders={'Class': disp_order})
             fig_disp.update_layout(
                 template='plotly_dark', 
-                margin=dict(l=20, r=20, t=50, b=20),
-                legend=dict(
-                    categoryorder="array",
-                    categoryarray=disp_order
-                )
+                margin=dict(l=20, r=20, t=50, b=20)
             )
             st.plotly_chart(fig_disp, use_container_width=True)
 

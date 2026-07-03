@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Ignore all Excel files (redundant generated DBs and raw source data)
+*.xlsx
+
+# Exception: keep mapping file if needed for ETL versioning
+!MOTO_Model_Mapping.xlsx
+
+# Ignore temporary check scripts or scratch files
+scratch/
+test_*.py
+check_*.py
+analyze_*.py
+explore_*.py
+inspect_*.py
+verify_*.py
